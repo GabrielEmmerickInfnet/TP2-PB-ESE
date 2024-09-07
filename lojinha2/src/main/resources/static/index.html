@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha de R$1,99 - Gerenciamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lojinha de R$1,99 - Gerenciamento de Produtos e Fornecedores</h1>
+
+        <!-- Seção de Fornecedores -->
+        <div class="section">
+            <h2>Fornecedores</h2>
+            <ul id="fornecedores"></ul>
+
+            <h3>Adicionar Fornecedor</h3>
+            <form id="fornecedorForm">
+                <label for="nomeFornecedor">Nome:</label>
+                <input type="text" id="nomeFornecedor" required><br>
+
+                <label for="contatoFornecedor">Contato:</label>
+                <input type="text" id="contatoFornecedor" required><br>
+
+                <button type="submit">Adicionar Fornecedor</button>
+            </form>
+
+            <h3>Buscar Fornecedor por ID</h3>
+            <form id="buscarFornecedorForm">
+                <label for="idFornecedorBusca">ID do Fornecedor:</label>
+                <input type="number" id="idFornecedorBusca" required><br>
+
+                <button type="submit">Buscar Fornecedor</button>
+            </form>
+            <p id="resultadoFornecedor"></p>
+        </div>
+
+        <!-- Seção de Produtos -->
+        <div class="section">
+            <h2>Produtos</h2>
+            <ul id="produtos"></ul>
+
+            <h3>Adicionar Produto</h3>
+            <form id="produtoForm">
+                <label for="nomeProduto">Nome:</label>
+                <input type="text" id="nomeProduto" required><br>
+
+                <label for="descricaoProduto">Descrição:</label>
+                <input type="text" id="descricaoProduto" required><br>
+
+                <label for="quantidadeProduto">Quantidade em Estoque:</label>
+                <input type="number" id="quantidadeProduto" required><br>
+
+                <label for="fornecedorProduto">Fornecedor:</label>
+                <select id="fornecedorProduto" required></select><br>
+
+                <button type="submit">Adicionar SDFSDF Produto</button>
+            </form>
+
+            <h3>Buscar Produto por ID</h3>
+            <form id="buscarProdutoForm">
+                <label for="idProdutoBusca">ID do Produto:</label>
+                <input type="number" id="idProdutoBusca" required><br>
+
+                <button type="submit">Buscar Produto</button>
+            </form>
+            <p id="resultadoProduto"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
